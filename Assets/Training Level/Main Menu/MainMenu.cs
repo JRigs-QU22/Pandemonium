@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
         InstrutionPanel.gameObject.SetActive(false);
         LoadingPanel.gameObject.SetActive(false);
         CreditPanel.gameObject.SetActive(false);
+        LevelMenu.gameObject.SetActive(false);
     }
     public void Play()
     {
@@ -21,29 +22,47 @@ public class MainMenu : MonoBehaviour
         InstrutionPanel.gameObject.SetActive(false);
         CreditPanel.gameObject.SetActive(false);
         LoadingPanel.gameObject.SetActive(true);
-        SceneManager.LoadScene("TrainingLevel");
+        LevelMenu.gameObject.SetActive(true);
+        ///SceneManager.LoadScene("TrainingLevel");
     }
     public void OpenInstruction()
     {
         MainMenuPanel.gameObject.SetActive(false);
         CreditPanel.gameObject.SetActive(false);
         InstrutionPanel.gameObject.SetActive(true);
+        LevelMenu.gameObject.SetActive(false);
     }
     public void BackToMenu()
     {
         InstrutionPanel.gameObject.SetActive(false);
         CreditPanel.gameObject.SetActive(false);
         MainMenuPanel.gameObject.SetActive(true);
+        LevelMenu.gameObject.SetActive(false);
     }
     public void Credit()
     {
         MainMenuPanel.gameObject.SetActive(false);
         InstrutionPanel.gameObject.SetActive(false);
         CreditPanel.gameObject.SetActive(true);
+        LevelMenu.gameObject.SetActive(false);
     }
  
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("TrainingLevel");
+    }
+
+    public void OldLevel()
+    {
+        SceneManager.LoadScene("GameLevel_v3");
+    }
+    public void NewLevel()
+    {
+        SceneManager.LoadScene("GameLevel_v4");
     }
 }

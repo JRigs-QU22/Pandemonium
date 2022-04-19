@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody), typeof(AudioSource))]
 public class EnemyBase : MonoBehaviour
@@ -22,6 +23,8 @@ public class EnemyBase : MonoBehaviour
     public bool roll;
     public bool slow;
     public bool full;
+    public Text HeadshotText;
+
 
 
     [Header("FOV")]
