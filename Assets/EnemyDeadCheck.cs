@@ -8,6 +8,7 @@ public class EnemyDeadCheck : MonoBehaviour
     public GameObject Wall;
     public bool isDead;
     public GameObject Point;
+    public AudioSource Chime;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,9 @@ public class EnemyDeadCheck : MonoBehaviour
         }
         if(isDead == true)
         {
+            
             Point.SetActive(true);
+            Chime.Play();
             Wall.SetActive(false);
         }
     }

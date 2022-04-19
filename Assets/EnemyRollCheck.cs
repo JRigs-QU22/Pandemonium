@@ -7,6 +7,7 @@ public class EnemyRollCheck : MonoBehaviour
     public EnemyBase enemy;
     public GameObject Wall;
     public bool isRolled;
+    public AudioSource Chime;
 
     private GameObject enemyorigin;
     private Vector3 enemyPos;
@@ -41,7 +42,9 @@ public class EnemyRollCheck : MonoBehaviour
         }
         if (isRolled == true)
         {
+            
             Point.SetActive(true);
+            Chime.Play();
             Wall.SetActive(false);
         }
     }

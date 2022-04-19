@@ -22,6 +22,7 @@ public class Headshot : MonoBehaviour
     {
         if(collision.gameObject.tag == "Bullet")
         {
+            enemy.isHeadshot = true;
             HeadshotText.enabled = true;
             Debug.Log("Headshot");
             enemy.takeDamage(1000f);

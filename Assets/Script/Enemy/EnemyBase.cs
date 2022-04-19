@@ -23,6 +23,7 @@ public class EnemyBase : MonoBehaviour
     public bool roll;
     public bool slow;
     public bool full;
+    public bool isHeadshot;
     public Text HeadshotText;
 
 
@@ -62,6 +63,7 @@ public class EnemyBase : MonoBehaviour
     [Range(-1, 1)]
     public float leftright;
     public AudioSource KillAudio;
+    public AudioSource HSAudio;
     public AudioSource PartialCombo;
     public AudioSource FullCombo;
 
@@ -257,7 +259,14 @@ public class EnemyBase : MonoBehaviour
     protected void Die()
     {
         dead = true;
-        KillAudio.Play();
+        if (isHeadshot == true)
+        {
+            HSAudio.Play();
+        }
+        else if (isHeadshot == false)
+        {
+            KillAudio.Play();
+        }
         timeBetweenShot = 1000000;
         if (TPS.IsRoll == false && TPS.IsSlow == false)
         {

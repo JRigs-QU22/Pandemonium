@@ -7,7 +7,8 @@ public class EnemyStunCheck : MonoBehaviour
     public EnemyBase enemy;
     public GameObject Wall;
     public bool isStunned;
- 
+    public AudioSource Chime;
+
 
     private GameObject enemyorigin;
     private Vector3 enemyPos;
@@ -44,7 +45,9 @@ public class EnemyStunCheck : MonoBehaviour
         }
         if (isStunned == true)
         {
+            
             Point.SetActive(true);
+            Chime.Play();
             Wall.SetActive(false);
         }
     }
