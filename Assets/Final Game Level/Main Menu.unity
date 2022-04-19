@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1085406122}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Credit
+        m_MethodName: NewLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1679,8 +1679,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1085406122}
-        m_TargetAssemblyTypeName: Scenestuff, Assembly-CSharp
-        m_MethodName: OpenInstruction
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: OldLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2186,6 +2186,7 @@ MonoBehaviour:
   InstrutionPanel: {fileID: 2141231469}
   LoadingPanel: {fileID: 617098403}
   CreditPanel: {fileID: 1924603829}
+  LevelMenuPanel: {fileID: 1766540308}
 --- !u!4 &1085406123
 Transform:
   m_ObjectHideFlags: 0
@@ -2641,8 +2642,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1085406122}
-        m_TargetAssemblyTypeName: Scenestuff, Assembly-CSharp
-        m_MethodName: Play
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: Tutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3102,12 +3103,12 @@ GameObject:
   - component: {fileID: 1766540311}
   - component: {fileID: 1766540310}
   m_Layer: 5
-  m_Name: LevelMenu
+  m_Name: Level Menu Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1766540309
 RectTransform:
   m_ObjectHideFlags: 0
