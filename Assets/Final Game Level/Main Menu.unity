@@ -923,7 +923,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Version 1.3.0
+  m_Text: Version 1.4.0
 --- !u!222 &684492747
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3864,19 +3864,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Changes from Playtest 3
+  m_Text: 'Changes from Playtest 4
 
 
-    - New Tutorial
+    - Updated Tutorial
 
-    - New Voices
+    - New Level
 
     -
-    Pause Menu
+    Positional Damage
 
-    - Pup Up Text Instructions
+    - New Combos
 
-    - Some More Bug Fixes'
+    - NewAudio'
 --- !u!222 &2072353965
 CanvasRenderer:
   m_ObjectHideFlags: 0

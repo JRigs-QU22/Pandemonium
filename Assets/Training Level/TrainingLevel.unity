@@ -371,6 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1756020277}
+  HeadshotText: {fileID: 0}
 --- !u!1001 &118436024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1100,6 +1101,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 593711499}
     m_Modifications:
+    - target: {fileID: 1824697203, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+      propertyPath: HeadshotText
+      value: 
+      objectReference: {fileID: 586958399}
     - target: {fileID: 4685842452633243411, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_Name
       value: '[GOON] (3)'
@@ -5592,6 +5597,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 593711499}
     m_Modifications:
+    - target: {fileID: 1824697203, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+      propertyPath: HeadshotText
+      value: 
+      objectReference: {fileID: 586958399}
     - target: {fileID: 4685842452633243411, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_Name
       value: '[GOON] (4)'
@@ -6941,6 +6950,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 593711499}
     m_Modifications:
+    - target: {fileID: 1824697203, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+      propertyPath: HeadshotText
+      value: 
+      objectReference: {fileID: 586958399}
     - target: {fileID: 4685842452633243411, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_Name
       value: '[GOON]'
@@ -9146,6 +9159,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 593711499}
     m_Modifications:
+    - target: {fileID: 1824697203, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+      propertyPath: HeadshotText
+      value: 
+      objectReference: {fileID: 586958399}
     - target: {fileID: 4685842452633243411, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_Name
       value: '[GOON] (1)'
@@ -15370,6 +15387,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 593711499}
     m_Modifications:
+    - target: {fileID: 1824697203, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
+      propertyPath: HeadshotText
+      value: 
+      objectReference: {fileID: 586958399}
     - target: {fileID: 4685842452633243411, guid: 870cbf8467cc4b8489172e7d9c0f26da, type: 3}
       propertyPath: m_Name
       value: '[GOON] (2)'
