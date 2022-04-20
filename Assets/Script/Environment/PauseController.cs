@@ -14,7 +14,7 @@ public class PauseController : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             GameState currentGameState = GameStateManager.Instance.CurrentGameState;
             GameState newGameState = currentGameState == GameState.Gameplay

@@ -25,10 +25,7 @@ public class SceneController : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && ExitGameWhenPressEsc == true)
-        {
-            Application.Quit();
-        }
+       
         if (Input.GetKeyDown(KeyCode.P) && ResetLevelWhenPressP == true)
         {
             ResetLevel();
