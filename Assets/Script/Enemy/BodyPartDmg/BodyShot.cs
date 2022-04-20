@@ -20,7 +20,7 @@ public class BodyShot : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            Debug.Log("Bodyshot");
+            //Debug.Log("Bodyshot");
             enemy.takeDamage(40f);
         }
     }

@@ -24,7 +24,7 @@ public class Headshot : MonoBehaviour
         {
             enemy.isHeadshot = true;
             HeadshotText.enabled = true;
-            Debug.Log("Headshot");
+            //Debug.Log("Headshot");
             enemy.takeDamage(1000f);
             enemy.score.value += enemy.scorePoint * 2;
         }
