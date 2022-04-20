@@ -16,7 +16,7 @@ public class SkipTutorial : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.RightShift))
         {
-            SceneManager.LoadScene("GameLevel_v3");
+            SceneManager.LoadScene("Main Menu");
         }
     }
 }

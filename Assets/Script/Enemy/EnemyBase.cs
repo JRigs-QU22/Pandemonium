@@ -14,7 +14,7 @@ public class EnemyBase : MonoBehaviour
     protected string name;
     public float maxHealth = 100f;
     [SerializeField]
-    protected int scorePoint = 10;
+    public int scorePoint = 10;
     public Score score;
     [HideInInspector] public float health;
     public int NAVspeed = 2;
@@ -308,7 +308,7 @@ public class EnemyBase : MonoBehaviour
         if (collision.gameObject.tag == "Bullet")
         {
             //obstructionMask = LayerMask.GetMask("Default");
-            takeDamage(40f);
+            takeDamage(30f);
             canSeePlayer = true;
             radius = 35f;
             bulletRecord = collision.transform.position;
