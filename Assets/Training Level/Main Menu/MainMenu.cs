@@ -81,4 +81,9 @@ public class MainMenu : MonoBehaviour
         LevelMenuPanel.gameObject.SetActive(false);
         SceneManager.LoadScene("GameLevel_v4");
     }
+    public void Update()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
 }
