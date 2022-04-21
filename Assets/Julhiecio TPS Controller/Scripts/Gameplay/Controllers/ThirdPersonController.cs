@@ -1010,7 +1010,9 @@ public class ThirdPersonController : MonoBehaviour
                         } 
                         else
                         {
-                            Debug.Log("Can't pick up after you throw your current weapon");
+                            WeaponInUse.BulletsAmounts = WeaponInUse.BulletsPerMagazine;
+                            Destroy(hitweapon.transform.gameObject);
+                            throwing.readyToThrow = true;
                         }
                         
                         
