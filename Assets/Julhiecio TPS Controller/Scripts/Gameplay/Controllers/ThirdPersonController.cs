@@ -1010,7 +1010,6 @@ public class ThirdPersonController : MonoBehaviour
                         } 
                         else
                         {
-                            WeaponInUse.BulletsAmounts = WeaponInUse.BulletsPerMagazine;
                             Destroy(hitweapon.transform.gameObject);
                             throwing.readyToThrow = true;
                         }
