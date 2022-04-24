@@ -43,6 +43,7 @@ public class PauseController : MonoBehaviour
 
                 }
                 pausePanel.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked;
             }
             
 

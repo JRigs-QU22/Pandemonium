@@ -40,20 +40,20 @@ public class EnemyBase : MonoBehaviour
     [Header("References")]
     public GameObject playerRef; // DO NOT DEFINE / DRAG ANYTHING TO THIS
     [SerializeField] protected Animator animator = null;
-    private RagdollEnemyAdvanced rgd;
+    protected RagdollEnemyAdvanced rgd;
     public AudioSource ShootAudio;
     public NavMeshAgent navMeshAgent;
     public Vector3 bulletRecord;
     private ThirdPersonController TPS;
     public GameObject FloatingTextPrefab;
-    private Quaternion rot;
+    protected Quaternion rot;
 
     [Header("Shooting")]
     public GameObject bullet;
     [Range(0, 2)]
     public float inaccuracy;
     public float timeBetweenShot = 0.5f; //  more value means low fire rate
-    private float baseTimeBetweenShot;
+    protected float baseTimeBetweenShot;
     protected float nextShot;
     // Adjust shooting point
     [Range(0, 2)]
@@ -101,8 +101,6 @@ public class EnemyBase : MonoBehaviour
     }
     protected virtual void Update()
     {
-       
-
         rot = this.transform.rotation;
         rot.y = rot.y * -180;
 
@@ -137,9 +135,7 @@ public class EnemyBase : MonoBehaviour
             Debug.Log(isStun);
             animator.SetBool("Dizzy", true);
             navMeshAgent.speed = 0;
-            Invoke(nameof(resetStun), stunCooldown);
-            
-            
+            Invoke(nameof(resetStun), stunCooldown); 
         }
 
         if (health <= 0)
