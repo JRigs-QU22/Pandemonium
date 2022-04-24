@@ -2252,6 +2252,12 @@ MonoBehaviour:
   health: 0
   NAVspeed: 2
   TimeToDelete: 2
+  dead: 0
+  roll: 0
+  slow: 0
+  full: 0
+  isHeadshot: 0
+  HeadshotText: {fileID: 0}
   radius: 20
   angle: 95
   targetMask:
@@ -2274,10 +2280,12 @@ MonoBehaviour:
   forward: 0.4
   leftright: 0
   KillAudio: {fileID: 7621032670262996818}
+  HSAudio: {fileID: 0}
   PartialCombo: {fileID: 3024775704612816468}
   FullCombo: {fileID: -6211436014002081946}
   stunCooldown: 6
   StunAudio: {fileID: -8429079172662904886}
+  stun: 0
 --- !u!114 &919132147891899020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2503,7 +2511,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 76aa804861d2cdf4ab2aaa6396fa5c2e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a2ac353f833316c43947c419392320de, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2599,7 +2607,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 463e9538c121f314ea668cdee0513c04, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5edb4538b8d51204ea65d5579e151ae7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
