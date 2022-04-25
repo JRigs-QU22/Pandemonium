@@ -15,6 +15,7 @@ public class CheckPoint : MonoBehaviour
 
     public EnemyBase[] enemies;
     public CheckPoint previousCheckPoint;
+    public CheckPoint previousCheckPoint2;
     public EDC edc;
     private bool allDead = false;
 
@@ -53,10 +54,14 @@ public class CheckPoint : MonoBehaviour
         // Turn off enemy in the previous checkpoint
         try
         {
-            if (previousCheckPoint.checkIfAllDead())
+            if (previousCheckPoint.edc.isAllDead == true)
             {
                 Debug.Log("No Spawn");
                 foreach (EnemyBase enemy in previousCheckPoint.enemies)
+                {
+                    enemy.gameObject.SetActive(false);
+                }
+                foreach (EnemyBase enemy in previousCheckPoint2.enemies)
                 {
                     enemy.gameObject.SetActive(false);
                 }
@@ -87,9 +92,10 @@ public class CheckPoint : MonoBehaviour
                 edc.isDead[i] = true;
             }
         }
+        checkIfAllDead();
         Debug.Log(allDead);
     }
-    public bool checkIfAllDead()
+    public void checkIfAllDead()
     {
         for (int i = 0; i < enemies.Length; i++)
         {
@@ -100,15 +106,16 @@ public class CheckPoint : MonoBehaviour
             else if (edc.isDead[i] == false)
             {
                 allDead = false;
+                break;
             }
         }
         if(allDead == true)
         {
-            return true;
+            edc.isAllDead = true;
         }
         else
         {
-            return false;
+            edc.isAllDead = false;
         }
     }
 

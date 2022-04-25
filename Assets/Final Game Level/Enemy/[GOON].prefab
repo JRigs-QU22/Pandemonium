@@ -1182,7 +1182,7 @@ MonoBehaviour:
   inaccuracy: 0.2
   timeBetweenShot: 1.45
   upward: 2
-  forward: 0.4
+  forward: 1
   leftright: 0
   KillAudio: {fileID: -106266245421154941}
   HSAudio: {fileID: 1361168905793524975}

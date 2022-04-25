@@ -25,7 +25,7 @@ public class Goon : EnemyBase
         }
         try
         {
-            Physics.IgnoreCollision(GameObject.FindGameObjectWithTag("Bullet").GetComponent<Collider>(), GetComponent<CapsuleCollider>());
+            Physics.IgnoreCollision(GameObject.FindGameObjectWithTag("Bullet").GetComponent<Collider>(), GetComponent<CapsuleCollider>());   
         }
         catch 
         {

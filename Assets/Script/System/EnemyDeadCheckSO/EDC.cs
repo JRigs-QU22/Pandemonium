@@ -6,7 +6,8 @@ using UnityEngine;
 public class EDC : ScriptableObject
 {
     public bool[] isDead;
-    
+    public bool isAllDead;
+
 }
     
 
