@@ -14,7 +14,6 @@ public class SceneController : MonoBehaviour
     public bool ExitGameWhenPressEsc;
     public bool ResetLevelWhenPressP;
     public GameObject data;
-    //public GameObject cpdata;
     void Start()
     {  
         pl = FindObjectOfType<ThirdPersonController>();

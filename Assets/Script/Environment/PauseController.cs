@@ -11,11 +11,7 @@ public class PauseController : MonoBehaviour
     private void Start()
     {
         pausePanel.SetActive(false);
-        GameObject[] arr = GameObject.FindGameObjectsWithTag("Enemy");
-        foreach (GameObject enemy in arr)
-        {
-            enemy.GetComponent<EnemyBase>().navMeshAgent.speed = enemy.GetComponent<EnemyBase>().NAVspeed;
-        }
+       
     }
     void Update()
     {

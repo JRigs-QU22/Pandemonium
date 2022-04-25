@@ -15,7 +15,8 @@ public class CheckPoint : MonoBehaviour
 
     public EnemyBase[] enemies;
     public CheckPoint previousCheckPoint;
-
+    public EDC edc;
+    private bool allDead = false;
 
     // Get position of the last activated checkpoint
     public static Vector3 GetActiveCheckPointPosition()
@@ -52,10 +53,14 @@ public class CheckPoint : MonoBehaviour
         // Turn off enemy in the previous checkpoint
         try
         {
-            foreach (EnemyBase enemy in previousCheckPoint.enemies)
+            if (previousCheckPoint.checkIfAllDead())
             {
-                enemy.gameObject.SetActive(false);
-            }
+                Debug.Log("No Spawn");
+                foreach (EnemyBase enemy in previousCheckPoint.enemies)
+                {
+                    enemy.gameObject.SetActive(false);
+                }
+            }         
         }
         catch
         {
@@ -71,13 +76,41 @@ public class CheckPoint : MonoBehaviour
     {
         // We search all the checkpoints in the current scene
         CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList();
-        
-        for(int i = 0; i < enemies.Length; i++)
+        edc.isDead = new bool[enemies.Length];
+    }
+    void Update()
+    {
+        for (int i = 0; i < enemies.Length; i++)
         {
-            enemies[i].navMeshAgent.speed = 0;
+            if (enemies[i].GetComponent<EnemyBase>().dead)
+            {
+                edc.isDead[i] = true;
+            }
+        }
+        Debug.Log(allDead);
+    }
+    public bool checkIfAllDead()
+    {
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            if (edc.isDead[i] == true)
+            {
+                allDead = true;
+            }
+            else if (edc.isDead[i] == false)
+            {
+                allDead = false;
+            }
+        }
+        if(allDead == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
-
 
     void OnTriggerEnter(Collider other)
     {

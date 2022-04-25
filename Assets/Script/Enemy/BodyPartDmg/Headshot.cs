@@ -27,6 +27,8 @@ public class Headshot : MonoBehaviour
             //Debug.Log("Headshot");
             enemy.takeDamage(1000f);
             enemy.score.value += enemy.scorePoint * 2;
+            enemy.canSeePlayer = true;
+            enemy.radius = 35f;
         }
         else
         {

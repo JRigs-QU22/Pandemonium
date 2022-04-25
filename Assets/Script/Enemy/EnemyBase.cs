@@ -131,7 +131,7 @@ public class EnemyBase : MonoBehaviour
 
         if (isStun == true)
         {
-            Debug.Log(isStun);
+            //Debug.Log(isStun);
             animator.SetBool("Dizzy", true);
             navMeshAgent.speed = 0;
             Invoke(nameof(resetStun), stunCooldown); 
@@ -251,6 +251,7 @@ public class EnemyBase : MonoBehaviour
     protected void Die()
     {
         dead = true;
+        this.GetComponent<CapsuleCollider>().enabled = false;
         if (isHeadshot == true)
         {
             HSAudio.Play();
@@ -292,7 +293,7 @@ public class EnemyBase : MonoBehaviour
 
         rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
-        Destroy(gameObject, TimeToDelete);
+        //Destroy(gameObject, TimeToDelete);
 
     }
     private void OnCollisionEnter(Collision collision)

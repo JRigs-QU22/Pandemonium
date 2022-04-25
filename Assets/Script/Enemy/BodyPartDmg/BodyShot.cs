@@ -22,6 +22,8 @@ public class BodyShot : MonoBehaviour
         {
             //Debug.Log("Bodyshot");
             enemy.takeDamage(40f);
+            enemy.canSeePlayer = true;
+            enemy.radius = 35f;
         }
     }
 }
