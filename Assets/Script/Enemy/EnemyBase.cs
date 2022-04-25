@@ -80,7 +80,6 @@ public class EnemyBase : MonoBehaviour
     private void Awake()
     {
         health = maxHealth;
-        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
     }
 
     protected virtual void Start()
@@ -143,6 +142,7 @@ public class EnemyBase : MonoBehaviour
             navMeshAgent.isStopped = true;
         }
         Physics.IgnoreLayerCollision(10, 20, true);
+        
     }
     // Ray Cast System 
     #region RayCast
@@ -234,11 +234,7 @@ public class EnemyBase : MonoBehaviour
             Die();
         }
     }
-    protected void OnGameStateChanged(GameState newGameState)
-    {
-        enabled = newGameState == GameState.Gameplay;
-        
-    }
+
     protected void ShowFloatingText()
     {
         GameObject go = Instantiate(FloatingTextPrefab, transform.position, rot, transform);

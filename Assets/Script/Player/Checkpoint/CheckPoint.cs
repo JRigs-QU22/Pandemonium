@@ -14,6 +14,8 @@ public class CheckPoint : MonoBehaviour
     public static List<GameObject> CheckPointsList;
 
     public EnemyBase[] enemies;
+    public CheckPoint previousCheckPoint;
+
 
     // Get position of the last activated checkpoint
     public static Vector3 GetActiveCheckPointPosition()
@@ -46,6 +48,21 @@ public class CheckPoint : MonoBehaviour
 
         // We activated the current checkpoint
         Activated = true;
+
+        // Turn off enemy in the previous checkpoint
+        try
+        {
+            foreach (EnemyBase enemy in previousCheckPoint.enemies)
+            {
+                enemy.gameObject.SetActive(false);
+            }
+        }
+        catch
+        {
+            
+        }
+        
+        
         CPAudio.Play();
         Debug.Log("Active New Check Point");
     }

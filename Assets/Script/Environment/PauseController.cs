@@ -11,6 +11,11 @@ public class PauseController : MonoBehaviour
     private void Start()
     {
         pausePanel.SetActive(false);
+        GameObject[] arr = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in arr)
+        {
+            enemy.GetComponent<EnemyBase>().navMeshAgent.speed = enemy.GetComponent<EnemyBase>().NAVspeed;
+        }
     }
     void Update()
     {
@@ -25,26 +30,24 @@ public class PauseController : MonoBehaviour
             if(newGameState == GameState.Paused)
             {
                 pausePanel.SetActive(true);
-                GameObject[] arr = GameObject.FindGameObjectsWithTag("Enemy");
-                foreach(GameObject enemy in arr)
-                {
-                    Debug.Log(enemy.name);
-                    enemy.GetComponent<EnemyBase>().navMeshAgent.speed = 0;
-
-                }
                 Cursor.lockState = CursorLockMode.Confined;
+                GameObject[] arr = GameObject.FindGameObjectsWithTag("Enemy");
+                foreach (GameObject enemy in arr)
+                {
+                    enemy.GetComponent<EnemyBase>().navMeshAgent.speed = 0;
+                }
             }
             else
             {
+                pausePanel.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked;
                 GameObject[] arr = GameObject.FindGameObjectsWithTag("Enemy");
                 foreach (GameObject enemy in arr)
                 {
                     enemy.GetComponent<EnemyBase>().navMeshAgent.speed = 2;
-
                 }
-                pausePanel.SetActive(false);
-                Cursor.lockState = CursorLockMode.Locked;
             }
+
             
 
         }
