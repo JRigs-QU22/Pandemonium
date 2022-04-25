@@ -13,14 +13,15 @@ public class SceneController : MonoBehaviour
     public float SecondsToReset = 4;
     public bool ExitGameWhenPressEsc;
     public bool ResetLevelWhenPressP;
-    private GameObject SpawnPoint;
     public GameObject data;
     //public GameObject cpdata;
     void Start()
     {  
         pl = FindObjectOfType<ThirdPersonController>();
         pl.transform.position = GameObject.FindGameObjectWithTag("SpawnPoint").transform.position;
+        pl.transform.rotation = GameObject.FindGameObjectWithTag("SpawnPoint").transform.rotation;
         Destroy(GameObject.FindGameObjectWithTag("SpawnPoint"));
+        
 
     }
     void Update()
