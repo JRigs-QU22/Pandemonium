@@ -19,6 +19,7 @@ public class EnemyBase : MonoBehaviour
     [HideInInspector] public float health;
     public int NAVspeed = 2;
     public float TimeToDelete;
+    public float ScoreTime = 1f;
     public bool dead;
     public bool roll;
     public bool slow;
@@ -252,28 +253,36 @@ public class EnemyBase : MonoBehaviour
     {
         dead = true;
         this.GetComponent<CapsuleCollider>().enabled = false;
-        if (isHeadshot == true)
+        if (dead == true)
+        {
+            ScoreTime -= Time.deltaTime;
+        }
+        else if (ScoreTime < 0)
+        {
+            score.value += 0;
+        }
+        if (ScoreTime > 0 && isHeadshot == true)
         {
             HSAudio.Play();
         }
-        else if (isHeadshot == false)
+        else if (ScoreTime > 0 && isHeadshot == false)
         {
             KillAudio.Play();
         }
         timeBetweenShot = 1000000;
-        if (TPS.IsRoll == false && TPS.IsSlow == false)
+        if (ScoreTime > 0 && TPS.IsRoll == false && TPS.IsSlow == false)
         {
             score.value += scorePoint;
             TPS.Health = TPS.Health + 10;
         }
-        else if (TPS.IsRoll == true && TPS.IsSlow == true)
+        else if (ScoreTime > 0 && TPS.IsRoll == true && TPS.IsSlow == true)
         {
             full = true;
             FullCombo.Play();
             score.value += scorePoint * 4;
             TPS.Health = TPS.Health + 20;
         }
-        else if (TPS.IsRoll == true || TPS.IsSlow == true)
+        else if (ScoreTime > 0 && TPS.IsRoll == true || ScoreTime > 0 && TPS.IsSlow == true)
         {
             PartialCombo.Play();
             score.value += scorePoint * 2;
