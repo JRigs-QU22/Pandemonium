@@ -39,6 +39,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5271494473838355060}
+  - component: {fileID: 4174590153695649390}
+  - component: {fileID: 1154282592634920334}
+  - component: {fileID: -7500309280331696903}
   m_Layer: 0
   m_Name: drug scale2
   m_TagString: Untagged
@@ -62,6 +65,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -85.87, z: 0}
+--- !u!54 &4174590153695649390
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4783892525031209166}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1154282592634920334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4783892525031209166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9249363, y: 0.31959775, z: 2.5652287}
+  m_Center: {x: 0.015052159, y: 0.0027016797, z: -0.010569889}
+--- !u!114 &-7500309280331696903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4783892525031209166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 40.2
+  FracturedObject: {fileID: 8107086555574162074, guid: 39f2544f819eda14f8e2ea40f451fe7c, type: 3}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 15
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0
 --- !u!1 &4985140340377696251
 GameObject:
   m_ObjectHideFlags: 0
