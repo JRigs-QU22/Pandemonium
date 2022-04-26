@@ -56,7 +56,7 @@ public class CheckPoint : MonoBehaviour
         {
             if (previousCheckPoint.edc.isAllDead == true)
             {
-                Debug.Log("No Spawn");
+                //Debug.Log("No Spawn");
                 foreach (EnemyBase enemy in previousCheckPoint.enemies)
                 {
                     enemy.gameObject.SetActive(false);
@@ -93,7 +93,7 @@ public class CheckPoint : MonoBehaviour
             }
         }
         checkIfAllDead();
-        Debug.Log(allDead);
+        //Debug.Log(allDead);
     }
     public void checkIfAllDead()
     {
