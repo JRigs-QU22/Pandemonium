@@ -1013,6 +1013,7 @@ GameObject:
   - component: {fileID: 4780804785372932761}
   - component: {fileID: 4297987722791443463}
   - component: {fileID: 5666523269308940504}
+  - component: {fileID: 1991181921970730886}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1083,6 +1084,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1991181921970730886
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8804441597495633011}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020371903, y: 0.020119933, z: 0.22175992}
+  m_Center: {x: 0.000000014877294, y: -1.4400912e-10, z: -0.10088001}
 --- !u!1 &9034962618219588422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,6 +1106,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8514461972079129084}
+  - component: {fileID: -5166215160932001486}
+  - component: {fileID: 8778107006415465024}
+  - component: {fileID: -2523946775762326412}
   m_Layer: 0
   m_Name: beer_pong table
   m_TagString: Untagged
@@ -1127,3 +1144,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &-5166215160932001486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9034962618219588422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 30
+  FracturedObject: {fileID: 7031184319830113857, guid: 692fa272707bb2f46bb44a4bb906e00e, type: 3}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 5
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0
+--- !u!54 &8778107006415465024
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9034962618219588422}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &-2523946775762326412
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9034962618219588422}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4012194, y: 0.21671109, z: 6.0698485}
+  m_Center: {x: 0.018734932, y: 0.018541675, z: -0.003136694}
