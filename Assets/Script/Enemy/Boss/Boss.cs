@@ -8,10 +8,12 @@ public class Boss : EnemyBase
     protected override void Start()
     {
         base.Start();
+        stunCooldown = 3;
     }
 
     protected override void Update()
     {
+        
         rot = this.transform.rotation;
         rot.y = rot.y * -180;
 
@@ -41,7 +43,7 @@ public class Boss : EnemyBase
             Debug.Log(isStun);
             animator.SetBool("Dizzy", true);
             navMeshAgent.speed = 0;
-            Invoke(nameof(resetStun), 0.5f);
+            Invoke(nameof(resetStun), stunCooldown);
 
         }
 
@@ -51,16 +53,8 @@ public class Boss : EnemyBase
         }
         Physics.IgnoreLayerCollision(10, 20, true);
 
-        /*if (canSeePlayer)
-        {
-            animator.SetBool("Shoot", true);
-            animator.SetBool("Run", false);
-        }
-        else
-        {
-            animator.SetBool("Shoot", false);
-        }*/
-       // Debug.Log(health);
+        Debug.Log(isStun);
+
     }
    
 

@@ -64,7 +64,7 @@ public class Throwing : MonoBehaviour
             Console.WriteLine($"Hand: '{e}'");
         }
 
-        if (Input.GetKeyDown(throwKey) && readyToThrow)
+        if (Input.GetKeyDown(throwKey) && readyToThrow && tpc.WeaponInUse.WeaponSwitchID != -1)
         {
             anim.SetTrigger("Throw");
             Invoke(nameof(Throw), 1);

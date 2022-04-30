@@ -333,7 +333,6 @@ public class EnemyBase : MonoBehaviour
             
             isStun = true;
             animator.SetTrigger("IsStun");
-            Debug.Log("Throw hit");
             stun = true;
             CC.value += 0.5f;
             score.value += 10;
