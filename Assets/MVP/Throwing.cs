@@ -6,6 +6,9 @@ using TMPro;
 
 public class Throwing : MonoBehaviour
 {
+
+    public Animator anim;
+
     [Header("References")]
     public Transform cam;
     public Transform attackPoint;
@@ -26,7 +29,7 @@ public class Throwing : MonoBehaviour
 
     private void Start()
     {
-        
+        anim = GetComponent<Animator>();
         readyToThrow = true;
     }
 
@@ -63,7 +66,8 @@ public class Throwing : MonoBehaviour
 
         if (Input.GetKeyDown(throwKey) && readyToThrow)
         {
-            Throw();
+            anim.SetTrigger("Throw");
+            Invoke(nameof(Throw), 1);
             // after throw, turn off that weapon's visibility and lock it
             for (int i = tpc.Weapons.Length - 1; i > -1; i--)
             {
@@ -82,6 +86,8 @@ public class Throwing : MonoBehaviour
 
     private void Throw()
     {
+
+
         readyToThrow = false;
 
         // instantiate object to throw
