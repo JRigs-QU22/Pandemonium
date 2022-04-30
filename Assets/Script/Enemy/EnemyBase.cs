@@ -27,6 +27,7 @@ public class EnemyBase : MonoBehaviour
     public bool isHeadshot;
     public Text HeadshotText;
     public float ComboCount;
+    public ComboCounter CC;
 
 
 
@@ -102,6 +103,7 @@ public class EnemyBase : MonoBehaviour
     }
     protected virtual void Update()
     {
+        //CC.value = ComboCount;
         rot = this.transform.rotation;
         rot.y = rot.y * -180;
 
@@ -265,7 +267,7 @@ public class EnemyBase : MonoBehaviour
         if (ScoreTime > 0 && isHeadshot == true)
         {
             HSAudio.Play();
-            ComboCount = ComboCount + 0.5f;
+            CC.value += 0.5f;
         }
         else if (ScoreTime > 0 && isHeadshot == false)
         {
@@ -283,14 +285,14 @@ public class EnemyBase : MonoBehaviour
             FullCombo.Play();
             score.value += scorePoint * 4;
             TPS.Health = TPS.Health + 20;
-            ComboCount = ComboCount + 1f;
+            CC.value += 1f;
         }
         else if (ScoreTime > 0 && TPS.IsRoll == true || ScoreTime > 0 && TPS.IsSlow == true)
         {
             PartialCombo.Play();
             score.value += scorePoint * 2;
             TPS.Health = TPS.Health + 15;
-            ComboCount = ComboCount + 1f;
+            CC.value += 1f;
         }
         
         if (TPS.IsRoll == true)
@@ -333,7 +335,7 @@ public class EnemyBase : MonoBehaviour
             animator.SetTrigger("IsStun");
             Debug.Log("Throw hit");
             stun = true;
-            ComboCount = ComboCount + 0.5f;
+            CC.value += 0.5f;
             score.value += 10;
             scorePoint = scorePoint + 5;
             StunAudio.Play();

@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "ComboCounter", menuName = "ScriptableObjects/ComboCounter", order = 2)]
 public class ComboCounter : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float initValue;
+    public float value;
 
-    // Update is called once per frame
-    void Update()
+
+    private void OnEnable()
     {
-        
+        value = initValue;
     }
 }

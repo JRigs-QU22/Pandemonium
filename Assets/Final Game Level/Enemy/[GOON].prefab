@@ -1157,12 +1157,15 @@ MonoBehaviour:
   health: 0
   NAVspeed: 2
   TimeToDelete: 30
+  ScoreTime: 1
   dead: 0
   roll: 0
   slow: 0
   full: 0
   isHeadshot: 0
   HeadshotText: {fileID: 0}
+  ComboCount: 0
+  CC: {fileID: 11400000, guid: 1366a20ae3af8564e8aba09849e43bb2, type: 2}
   radius: 10
   angle: 238
   targetMask:
