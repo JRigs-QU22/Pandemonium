@@ -75,6 +75,8 @@ public class EnemyBase : MonoBehaviour
     public float stunCooldown = 5f;
     public AudioSource StunAudio;
     public bool stun;
+    private int pointBonusStun;
+    private int pointOGvalue;
 
 
 
@@ -87,6 +89,8 @@ public class EnemyBase : MonoBehaviour
 
     protected virtual void Start()
     {
+        pointBonusStun = scorePoint + 5;
+        pointOGvalue = scorePoint;
         dead = false;
         isStun = false;
 
@@ -249,8 +253,7 @@ public class EnemyBase : MonoBehaviour
         animator.SetBool("Dizzy", false);
         isStun = false;
         navMeshAgent.speed = NAVspeed;
-        scorePoint = scorePoint - 5;
-        
+        scorePoint = pointOGvalue;
     }
     protected void Die()
     {
@@ -336,7 +339,7 @@ public class EnemyBase : MonoBehaviour
             stun = true;
             CC.value += 0.5f;
             score.value += 10;
-            scorePoint = scorePoint + 5;
+            scorePoint = pointBonusStun;
             StunAudio.Play();
             TPS.SlowedTime = TPS.SlowedTime + 2.5f;
             if (TPS.SlowedTime > 5f)

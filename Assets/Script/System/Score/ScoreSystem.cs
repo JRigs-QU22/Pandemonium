@@ -32,10 +32,5 @@ public class ScoreSystem : MonoBehaviour
         {
             score.value = 0;
         }
-
-        //if (score.value >= 230)
-        //{
-          //  SceneManager.LoadScene("Win");
-        //}
     }
 }
