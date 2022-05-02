@@ -16,7 +16,7 @@ public class RankAndScore_UI : MonoBehaviour
     {
         TipText.enabled = false;
         PlayerScore = score.value;
-        ScoreText.text = "Your Score: " + PlayerScore;
+        ScoreText.text = "Your Pay: $" + PlayerScore;
     }
 
     // Update is called once per frame

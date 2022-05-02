@@ -21,7 +21,7 @@ public class ScoreSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textScore.text = "Score: " + score.value;
+        textScore.text = "Pay: $" + score.value;
         /*
         if (tps.IsDead == true)
         {
