@@ -32,7 +32,14 @@ public class Headshot : MonoBehaviour
         }
         else
         {
-            HeadshotText.enabled = false;
+            try
+            {
+                HeadshotText.enabled = false;
+            }
+            catch
+            {
+
+            }
         }
     }
 }

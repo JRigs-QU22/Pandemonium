@@ -81,7 +81,14 @@ public class CheckPoint : MonoBehaviour
     {
         // We search all the checkpoints in the current scene
         CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList();
-        edc.isDead = new bool[enemies.Length];
+        try
+        {
+            edc.isDead = new bool[enemies.Length];
+        }
+        catch
+        {
+
+        }
     }
     void Update()
     {
@@ -92,7 +99,15 @@ public class CheckPoint : MonoBehaviour
                 edc.isDead[i] = true;
             }
         }
-        checkIfAllDead();
+        try
+        {
+            checkIfAllDead();
+        }
+        catch
+        {
+
+        }
+        
         //Debug.Log(allDead);
     }
     public void checkIfAllDead()

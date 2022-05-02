@@ -19,22 +19,30 @@ public class ComboUIControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (TPS.IsRoll == true)
+        try
         {
-            RollText.enabled = true;
+            if (TPS.IsRoll == true)
+            {
+                RollText.enabled = true;
+            }
+            else
+            {
+                RollText.enabled = false;
+            }
+
+            if (TPS.IsSlow == true)
+            {
+                SlowText.enabled = true;
+            }
+            else
+            {
+                SlowText.enabled = false;
+            }
         }
-        else
+        catch
         {
-            RollText.enabled = false;
+
         }
         
-        if (TPS.IsSlow == true)
-        {
-            SlowText.enabled = true;
-        }
-        else
-        {
-            SlowText.enabled = false;
-        }
     }
 }
