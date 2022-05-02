@@ -311,7 +311,7 @@ public class EnemyBase : MonoBehaviour
 
         rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
-        //Destroy(gameObject, TimeToDelete);
+        Destroy(gameObject, TimeToDelete);
 
     }
     private void OnCollisionEnter(Collision collision)

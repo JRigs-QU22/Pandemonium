@@ -1156,7 +1156,7 @@ MonoBehaviour:
   score: {fileID: 11400000, guid: db171bab2d7df11499d241872dcba921, type: 2}
   health: 0
   NAVspeed: 2
-  TimeToDelete: 30
+  TimeToDelete: 5000
   ScoreTime: 1
   dead: 0
   roll: 0
