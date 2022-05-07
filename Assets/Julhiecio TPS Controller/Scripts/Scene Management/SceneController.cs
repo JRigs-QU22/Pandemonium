@@ -14,6 +14,7 @@ public class SceneController : MonoBehaviour
     public bool ExitGameWhenPressEsc;
     public bool ResetLevelWhenPressP;
     public GameObject data;
+    private GameObject PPC;
     void Start()
     {  
         pl = FindObjectOfType<ThirdPersonController>();
@@ -21,6 +22,8 @@ public class SceneController : MonoBehaviour
         pl.transform.rotation = GameObject.FindGameObjectWithTag("SpawnPoint").transform.rotation;
         Destroy(GameObject.FindGameObjectWithTag("SpawnPoint"));
 
+        PPC = GameObject.FindGameObjectWithTag("PPC");
+        DontDestroyOnLoad(PPC);
     }
     void Update()
     {
