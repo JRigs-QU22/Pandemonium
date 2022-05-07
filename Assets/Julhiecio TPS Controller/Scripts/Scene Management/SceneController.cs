@@ -20,7 +20,6 @@ public class SceneController : MonoBehaviour
         pl.transform.position = GameObject.FindGameObjectWithTag("SpawnPoint").transform.position;
         pl.transform.rotation = GameObject.FindGameObjectWithTag("SpawnPoint").transform.rotation;
         Destroy(GameObject.FindGameObjectWithTag("SpawnPoint"));
-        
 
     }
     void Update()
