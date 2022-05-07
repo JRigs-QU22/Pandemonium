@@ -1120,7 +1120,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 10
   m_CollisionDetection: 0
 --- !u!136 &1936578183
 CapsuleCollider:
@@ -1179,6 +1179,7 @@ MonoBehaviour:
   navMeshAgent: {fileID: 5604198894890551973}
   bulletRecord: {x: 0, y: 0, z: 0}
   FloatingTextPrefab: {fileID: 1221796056944967306, guid: a0dbbd984b130b741a805f366596f9d6, type: 3}
+  weaponModel: {fileID: 0}
   bullet: {fileID: 309664015520396096, guid: 1ec0d53fd37b72d4f8339857be300ecf, type: 3}
   inaccuracy: 2
   timeBetweenShot: 1e+12
