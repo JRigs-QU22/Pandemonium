@@ -2252,12 +2252,15 @@ MonoBehaviour:
   health: 0
   NAVspeed: 2
   TimeToDelete: 2
+  ScoreTime: 1
   dead: 0
   roll: 0
   slow: 0
   full: 0
   isHeadshot: 0
   HeadshotText: {fileID: 0}
+  ComboCount: 0
+  CC: {fileID: 0}
   radius: 20
   angle: 95
   targetMask:
@@ -2273,6 +2276,7 @@ MonoBehaviour:
   navMeshAgent: {fileID: 8375832502170295681}
   bulletRecord: {x: 0, y: 0, z: 0}
   FloatingTextPrefab: {fileID: 1221796056944967306, guid: a0dbbd984b130b741a805f366596f9d6, type: 3}
+  weaponModel: {fileID: 0}
   bullet: {fileID: 309664015520396096, guid: 1ec0d53fd37b72d4f8339857be300ecf, type: 3}
   inaccuracy: 0.21
   timeBetweenShot: 0.6
@@ -2513,7 +2517,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a2ac353f833316c43947c419392320de, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2609,7 +2613,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5edb4538b8d51204ea65d5579e151ae7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
