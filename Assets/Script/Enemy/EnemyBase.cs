@@ -52,6 +52,7 @@ public class EnemyBase : MonoBehaviour
     protected Quaternion rot;
 
     [Header("Shooting")]
+    public GameObject weaponModel;
     public GameObject bullet;
     [Range(0, 2)]
     public float inaccuracy;
@@ -311,6 +312,7 @@ public class EnemyBase : MonoBehaviour
 
         rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        Destroy(weaponModel, TimeToDelete);
         Destroy(gameObject, TimeToDelete);
 
     }

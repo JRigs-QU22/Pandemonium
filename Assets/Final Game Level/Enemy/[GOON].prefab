@@ -218,10 +218,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.23919794
-  m_Height: 1.0986837
+  m_Radius: 0.29055256
+  m_Height: 0.8164026
   m_Direction: 1
-  m_Center: {x: -0.07767107, y: 0.5493435, z: -3.4861076e-11}
+  m_Center: {x: -0.12902589, y: 0.690484, z: 1.0028532e-11}
 --- !u!144 &5604198893861867867
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -539,7 +539,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3525716360109596229}
   serializedVersion: 2
-  m_Mass: 10.9375
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -558,8 +558,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1625575, y: 0.9373103, z: 0.8343392}
-  m_Center: {x: -0.024220347, y: 0.43716937, z: -0.037602402}
+  m_Size: {x: 1.1625575, y: 0.9373103, z: 0.9935508}
+  m_Center: {x: -0.024220347, y: 0.4371695, z: -0.03747951}
 --- !u!144 &5604198894184256846
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -1181,6 +1181,7 @@ MonoBehaviour:
   navMeshAgent: {fileID: 5604198894890551973}
   bulletRecord: {x: 0, y: 0, z: 0}
   FloatingTextPrefab: {fileID: 1221796056944967306, guid: a0dbbd984b130b741a805f366596f9d6, type: 3}
+  weaponModel: {fileID: 6461807706006458342}
   bullet: {fileID: 309664015520396096, guid: 1ec0d53fd37b72d4f8339857be300ecf, type: 3}
   inaccuracy: 0.2
   timeBetweenShot: 1.45
@@ -1895,7 +1896,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4810721464733379656}
   serializedVersion: 2
-  m_Mass: 10.9375
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1914,8 +1915,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1949608, y: 0.8847466, z: 0.83476055}
-  m_Center: {x: -0.037599098, y: 0.2617709, z: -0.036588714}
+  m_Size: {x: 1.3009773, y: 1.2287223, z: 0.9723752}
+  m_Center: {x: -0.020507574, y: 0.08978296, z: -0.03689912}
 --- !u!114 &1309881574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2330,10 +2331,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.2397117
-  m_Height: 1.0986197
+  m_Radius: 0.29362434
+  m_Height: 0.80474097
   m_Direction: 1
-  m_Center: {x: 0.03396481, y: 0.5493125, z: 1.4057172e-10}
+  m_Center: {x: 0.08787741, y: 0.6962559, z: 5.0859256e-10}
 --- !u!144 &5604198894376642311
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -3012,6 +3013,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 729d37fa02a7ead40b7841e7bce73524, type: 3}
+--- !u!1 &6461807706006458342 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 729d37fa02a7ead40b7841e7bce73524, type: 3}
+  m_PrefabInstance: {fileID: 6155745653816865463}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5973782410810479964 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 729d37fa02a7ead40b7841e7bce73524, type: 3}

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Goon : EnemyBase
 {
-
     protected override void Start()
     {
         base.Start();
