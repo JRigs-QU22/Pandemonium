@@ -26,7 +26,8 @@ public class PauseController : MonoBehaviour
             if(newGameState == GameState.Paused)
             {
                 pausePanel.SetActive(true);
-                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
                 GameObject[] arr = GameObject.FindGameObjectsWithTag("Enemy");
                 foreach (GameObject enemy in arr)
                 {
