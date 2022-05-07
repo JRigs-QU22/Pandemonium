@@ -1183,8 +1183,8 @@ MonoBehaviour:
   FloatingTextPrefab: {fileID: 1221796056944967306, guid: a0dbbd984b130b741a805f366596f9d6, type: 3}
   weaponModel: {fileID: 6461807706006458342}
   bullet: {fileID: 309664015520396096, guid: 1ec0d53fd37b72d4f8339857be300ecf, type: 3}
-  inaccuracy: 0.2
-  timeBetweenShot: 1.45
+  inaccuracy: 0.15
+  timeBetweenShot: 1.1
   upward: 2
   forward: 1
   leftright: 0
