@@ -26,6 +26,7 @@ TagManager:
   - enemy3
   - enemy4
   - enemy5
+  - PPC
   layers:
   - Default
   - TransparentFX

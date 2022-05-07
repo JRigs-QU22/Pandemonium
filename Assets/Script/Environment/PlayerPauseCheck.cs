@@ -6,6 +6,7 @@ public class PlayerPauseCheck : MonoBehaviour
 {
     private ThirdPersonController player;
     // Start is called before the first frame update
+    private static PlayerPauseCheck PPC;
     void Start()
     {
         player = FindObjectOfType<ThirdPersonController>();
@@ -13,6 +14,11 @@ public class PlayerPauseCheck : MonoBehaviour
     void Awake()
     {
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+        DontDestroyOnLoad(this);
+        if (PPC != null)
+        {
+            PPC = this;
+        }
     }
     // Update is called once per frame
     void Update()
@@ -21,6 +27,7 @@ public class PlayerPauseCheck : MonoBehaviour
         {
             GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
         }
+
     }
     private void OnGameStateChanged(GameState newGameState)
     {
