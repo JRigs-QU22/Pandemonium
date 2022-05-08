@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7576764309908939336}
   - component: {fileID: 4761253747912235242}
   - component: {fileID: 4778666166159083763}
+  - component: {fileID: 2143957744403790205}
+  - component: {fileID: 345453959470550279}
   m_Layer: 0
   m_Name: PR_floorlamp_04
   m_TagString: Untagged
@@ -82,6 +84,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2143957744403790205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204232652839948117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0
+  FracturedObject: {fileID: 0}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 15
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0
+--- !u!65 &345453959470550279
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204232652839948117}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.022633923, y: 0.0146308085, z: 0.022633916}
+  m_Center: {x: 0.0013300631, y: 0.0027440875, z: 0.007885153}
 --- !u!1 &3450653501474316327
 GameObject:
   m_ObjectHideFlags: 0

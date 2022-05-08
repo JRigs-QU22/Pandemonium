@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5430019673112598696}
   - component: {fileID: 1443453686173978805}
   - component: {fileID: 2886880686915701441}
-  - component: {fileID: 2647793480854298862}
   m_Layer: 0
   m_Name: Cube.002
   m_TagString: Untagged
@@ -97,22 +96,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020591639, y: 0.042754505, z: 0.078378506}
   m_Center: {x: -0.0000000023283064, y: -0.0064543467, z: 0.008405123}
---- !u!54 &2647793480854298862
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608239076932122269}
-  serializedVersion: 2
-  m_Mass: 2
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &7952354145714768425
 GameObject:
   m_ObjectHideFlags: 0

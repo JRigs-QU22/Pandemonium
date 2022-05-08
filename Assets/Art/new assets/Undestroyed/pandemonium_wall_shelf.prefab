@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2660092754915882489}
   - component: {fileID: 1388612615413365340}
   - component: {fileID: 3792488939714383510}
-  - component: {fileID: -7246847901952407345}
+  - component: {fileID: 8891237087134403782}
+  - component: {fileID: 2642275765824542227}
   m_Layer: 0
   m_Name: pandemonium_wall_shelf
   m_TagString: Untagged
@@ -82,8 +83,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &-7246847901952407345
-MeshCollider:
+--- !u!114 &8891237087134403782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3432126546107281219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0
+  FracturedObject: {fileID: 0}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 15
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0
+--- !u!65 &2642275765824542227
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,7 +111,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6761583154040148038, guid: f23d3eb77aeb507438933b43ad64e3a6, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.020952327, y: 0.019999998, z: 0.021486223}
+  m_Center: {x: -0.00047616425, y: 0, z: -0.010743111}

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6640431241227283310}
   - component: {fileID: 504944125905048517}
   - component: {fileID: 1168307559909099015}
+  - component: {fileID: 6229078056003870465}
+  - component: {fileID: 1244181196997433344}
   m_Layer: 0
   m_Name: Cylinder.001
   m_TagString: Untagged
@@ -95,36 +97,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.14462218, y: 0.14829813, z: 0.06273756}
   m_Center: {x: -0.056288034, y: -8.7465464e-16, z: -0.04103225}
---- !u!1 &2255384895790511035
-GameObject:
+--- !u!114 &6229078056003870465
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 844678303964546365}
-  m_Layer: 0
-  m_Name: Empty
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &844678303964546365
-Transform:
+  m_GameObject: {fileID: 1371137810106620492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0
+  FracturedObject: {fileID: 0}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 15
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0
+--- !u!65 &1244181196997433344
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2255384895790511035}
-  m_LocalRotation: {x: 0.000000015454313, y: -0.70710677, z: 0.000000015454312, w: 0.7071068}
-  m_LocalPosition: {x: 12.130137, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 7109695335033871508}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1371137810106620492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14462218, y: 0.14829813, z: 0.06273756}
+  m_Center: {x: -0.056288034, y: -8.7465464e-16, z: -0.04103225}
 --- !u!1 &5165344674800999529
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,6 +139,8 @@ GameObject:
   - component: {fileID: 5415680256021310675}
   - component: {fileID: 1917047256434788228}
   - component: {fileID: 658935599749375876}
+  - component: {fileID: 776512573743416029}
+  - component: {fileID: 4318211855205908457}
   m_Layer: 0
   m_Name: Cylinder.002
   m_TagString: Untagged
@@ -206,6 +211,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &776512573743416029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5165344674800999529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0
+  FracturedObject: {fileID: 0}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 15
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0
+--- !u!65 &4318211855205908457
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5165344674800999529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06763139, y: 0.021048376, z: 0.06230889}
+  m_Center: {x: -0.0180616, y: 0.0000000018626432, z: -0.10297845}
 --- !u!1 &6312116867251336575
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +253,8 @@ GameObject:
   - component: {fileID: 4114806588387647822}
   - component: {fileID: 3411585376437207866}
   - component: {fileID: 491900589625494944}
+  - component: {fileID: 9109191444897424866}
+  - component: {fileID: 1804041859980112698}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -287,6 +325,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9109191444897424866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6312116867251336575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0
+  FracturedObject: {fileID: 0}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 15
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0
+--- !u!65 &1804041859980112698
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6312116867251336575}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.058576345, y: 0.020000005, z: 0.0463894}
+  m_Center: {x: -0.02062744, y: 0.0000000018626456, z: 0.013194673}
 --- !u!1 &7629492019169216046
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +386,6 @@ Transform:
   - {fileID: 4114806588387647822}
   - {fileID: 4081323615405156782}
   - {fileID: 5415680256021310675}
-  - {fileID: 844678303964546365}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
