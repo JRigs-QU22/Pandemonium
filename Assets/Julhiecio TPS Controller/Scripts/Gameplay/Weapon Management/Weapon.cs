@@ -297,6 +297,7 @@ public class Weapon : MonoBehaviour
 		if (ShootAudio != null)
 		{
 			GetComponent<AudioSource>().pitch = Random.Range(0.9f, 1.1f);
+			GetComponent<AudioSource>().volume = 0.3f;
 			GetComponent<AudioSource>().PlayOneShot(ShootAudio);
 		}
 	}
