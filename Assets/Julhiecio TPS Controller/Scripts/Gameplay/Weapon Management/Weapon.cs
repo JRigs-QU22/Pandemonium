@@ -88,7 +88,7 @@ public class Weapon : MonoBehaviour
 
 	private void Start()
 	{
-
+		
 
 		TotalBullets = -BulletsPerMagazine;
 		MyPivotCamera = FindObjectOfType<CamPivotController>();
