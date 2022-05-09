@@ -13818,6 +13818,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 7931f6dc1bf81e8428d3470ef841ba42, type: 3}
+    - target: {fileID: 1118371818, guid: 9ce03ed22613ec94794c2173f187f0bf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1325777735, guid: 9ce03ed22613ec94794c2173f187f0bf, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -14146,6 +14150,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: d471c5d0d7a507942b866611d54b9d20, type: 3}
+    - target: {fileID: 8103260765773332977, guid: 9ce03ed22613ec94794c2173f187f0bf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8103260766015350593, guid: 9ce03ed22613ec94794c2173f187f0bf, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -18018,7 +18026,10 @@ MonoBehaviour:
   TextToShow: 'Press the T key to throw your gun and stun the enemy
 
     (killing
-    not required)'
+    not required)
+
+
+    Stuns will also refill your slow motion meter'
   PlayerTag: Player
   MessageFieldName: MenssagesPanel
 --- !u!54 &1707060028

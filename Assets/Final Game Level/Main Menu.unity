@@ -923,7 +923,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Version 1.4.5
+  m_Text: Version 1.5 (Showcase Build)
 --- !u!222 &684492747
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2761,7 +2761,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "PLEASE READ CHANGELOG \nAND \"HOW TO PLAY\" \nTO BE AWARE OF CHANGES"
+  m_Text: 
 --- !u!222 &1349691145
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3864,29 +3864,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Changes from Playtest 5
-
-
-    - Fixed Weird Laser
-
-    - Lots of Bug Fixes
-
-    -
-    Louder Audio
-
-    - Tons of New Level Work
-
-    - New UI Changes
-
-    - AI Pathing
-    Work
-
-    - Boss Gameplay Overhaul
-
-    - No more enemy farming
-
-    - No more
-    geting score after killing enemy'
+  m_Text: 
 --- !u!222 &2072353965
 CanvasRenderer:
   m_ObjectHideFlags: 0
