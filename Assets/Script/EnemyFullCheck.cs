@@ -59,7 +59,7 @@ public class EnemyFullCheck : MonoBehaviour
  
     void changeLevel()
     {
-        SceneManager.LoadScene("GameLevel_v3");
+        SceneManager.LoadScene("GameLevel_v4");
     }
     IEnumerator RespawnEnemy()
     {

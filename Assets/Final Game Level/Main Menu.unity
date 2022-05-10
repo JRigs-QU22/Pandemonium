@@ -435,8 +435,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.79346615, y: 0.43927968}
   m_AnchorMax: {x: 0.79346615, y: 0.43927968}
-  m_AnchoredPosition: {x: 36.409973, y: -36.380005}
-  m_SizeDelta: {x: 299.2982, y: 473.8142}
+  m_AnchoredPosition: {x: -2, y: 35}
+  m_SizeDelta: {x: 291.95, y: 409.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &323544815
 MonoBehaviour:
@@ -460,7 +460,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e1a105923c48a1c498bfdf01cd0942ec, type: 3}
-    m_FontSize: 20
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -471,9 +471,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Level Music:\nOgre by Aim To Head\n\nGun Sounds:\nSampled from the\nJSRS
-    Library, and \nedited by Josh\n\nWaypoint System:\nAI Waypoint Pathing\nPlugin
-    made by\nfirestorm\n\nLevel Construction:\nProbuilder toolset\ncreated by unity"
+  m_Text: "Level Music:\nOgre by Aim To Head\nSaturn By Aim To Head\n\nGun Sounds:\nSampled
+    from the\nJSRS Library, and \nedited by Josh\n\nStun and Kill FX:\nProperty of
+    Call of Duty\nActivision-Blizzard\n\nHeadshot Audio:\nProperty of Rust\nFacepunch
+    Studios\n\nWaypoint System:\nAI Waypoint Pathing\nPlugin made by\nfirestorm\n\nLevel
+    Construction:\nProbuilder toolset\ncreated by unity\n\nVoices By Joshua Rigsby"
 --- !u!222 &323544816
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -923,7 +925,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Version 1.5 (Showcase Build)
+  m_Text: Version 1.6 (Final Build)
 --- !u!222 &684492747
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -966,7 +968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.42235598, y: 0.76100004}
   m_AnchorMax: {x: 0.42235598, y: 0.76100004}
-  m_AnchoredPosition: {x: -2, y: 0.99998474}
+  m_AnchoredPosition: {x: -2, y: -20}
   m_SizeDelta: {x: 215.3326, y: 55.2949}
   m_Pivot: {x: 0.50000006, y: 0.5000007}
 --- !u!114 &724286127
@@ -1008,7 +1010,12 @@ MonoBehaviour:
     Son Nguyen
 
 
-    Aaron Mills'
+    Aaron Mills
+
+    Jared Poulsen
+
+    Vivian
+    Nguyen'
 --- !u!222 &724286128
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3203,8 +3210,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.354356, y: 0.34}
   m_AnchorMax: {x: 0.354356, y: 0.34}
-  m_AnchoredPosition: {x: 2, y: 6}
-  m_SizeDelta: {x: 512.5547, y: 156.9762}
+  m_AnchoredPosition: {x: -9, y: 6}
+  m_SizeDelta: {x: 468, y: 156.976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1792645642
 MonoBehaviour:
@@ -3228,7 +3235,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e1a105923c48a1c498bfdf01cd0942ec, type: 3}
-    m_FontSize: 20
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -3949,7 +3956,7 @@ MonoBehaviour:
     Programmer:
 
 
-    Artist: '
+    Artists: '
 --- !u!222 &2115464744
 CanvasRenderer:
   m_ObjectHideFlags: 0
