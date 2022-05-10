@@ -32,5 +32,6 @@ public class ScoreSystem : MonoBehaviour
         {
             score.value = 0;
         }
+      
     }
 }
