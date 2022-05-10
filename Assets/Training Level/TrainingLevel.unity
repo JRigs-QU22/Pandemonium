@@ -4966,26 +4966,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &432493729 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6774352848214725603, guid: a4d6266b308ef064e96105addec9eafd, type: 3}
-  m_PrefabInstance: {fileID: 22330760}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &432493730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 432493729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffc8bc17de8d2ef4d8340a2169e49c53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LastAudio: {fileID: 0}
-  currentAudio: {fileID: 511528389}
-  enemies: []
 --- !u!1 &432712225
 GameObject:
   m_ObjectHideFlags: 0
@@ -5474,8 +5454,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LastAudio: {fileID: 886911233}
-  currentAudio: {fileID: 1920834585}
-  enemies: []
 --- !u!1001 &490435727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7291,8 +7269,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LastAudio: {fileID: 1974106412}
-  currentAudio: {fileID: 1719592447}
-  enemies: []
 --- !u!1 &642103368
 GameObject:
   m_ObjectHideFlags: 0
@@ -10431,8 +10407,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LastAudio: {fileID: 1920834585}
-  currentAudio: {fileID: 1974106412}
-  enemies: []
 --- !u!1 &956272419
 GameObject:
   m_ObjectHideFlags: 0
@@ -19255,8 +19229,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LastAudio: {fileID: 511528389}
-  currentAudio: {fileID: 886911233}
-  enemies: []
 --- !u!43 &1872981544
 Mesh:
   m_ObjectHideFlags: 0
