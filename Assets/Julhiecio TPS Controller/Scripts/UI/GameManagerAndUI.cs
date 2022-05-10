@@ -47,6 +47,9 @@ public class GameManagerAndUI : MonoBehaviour
 	public Image shotgun;
 	private Image weaponUI;
 
+	public ThirdPersonController tps;
+	public GameObject crosshairdot;
+
 	// addition
 
 	void Start()
@@ -104,6 +107,15 @@ public class GameManagerAndUI : MonoBehaviour
 			}
 		}
 
+		if (tps.WeaponID >= 0)
+		{
+			crosshairdot.SetActive(false);
+		}
+        else if(tps.WeaponID == -1)
+		{
+			crosshairdot.SetActive(true);
+		}
+		
 	}
 	
 	public void MobileUI()
