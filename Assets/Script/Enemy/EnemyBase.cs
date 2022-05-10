@@ -344,9 +344,9 @@ public class EnemyBase : MonoBehaviour
             scorePoint = pointBonusStun;
             StunAudio.Play();
             TPS.SlowedTime = TPS.SlowedTime + 2.5f;
-            if (TPS.SlowedTime > 5f)
+            if (TPS.SlowedTime > 10f)
             {
-                TPS.SlowedTime = 5f;
+                TPS.SlowedTime = 10f;
             }
 
             TPS.Health = TPS.Health + 5;
