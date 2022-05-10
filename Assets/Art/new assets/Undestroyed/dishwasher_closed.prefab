@@ -984,6 +984,7 @@ GameObject:
   - component: {fileID: 5251116779020061733}
   - component: {fileID: 7626547463521602955}
   - component: {fileID: -1501802968022313198}
+  - component: {fileID: 1858124825090597089}
   m_Layer: 0
   m_Name: dishwasher_closed
   m_TagString: Untagged
@@ -1050,6 +1051,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.6628113, y: 2.8331754, z: 2.393608}
   m_Center: {x: -0.010101318, y: -0.108836055, z: -0.7407265}
+--- !u!114 &1858124825090597089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4869629586937599647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0
+  FracturedObject: {fileID: 6860415457079323207, guid: 2b1efe85e274b2f4d805f455f0e487f9, type: 3}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 15
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0
 --- !u!1 &5655449800663718481
 GameObject:
   m_ObjectHideFlags: 0
