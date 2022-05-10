@@ -14,7 +14,7 @@ public class CheckPoint : MonoBehaviour
     public static List<GameObject> CheckPointsList;
 
     public EnemyBase[] enemies;
-    private EnemyBase[] allenemy;
+    public EnemyBase[] allenemy;
     public CheckPoint previousCheckPoint;
     public CheckPoint previousCheckPoint2;
     public EDC edc;
@@ -80,6 +80,7 @@ public class CheckPoint : MonoBehaviour
 
     void Start()
     {
+        allenemy = FindObjectsOfType<EnemyBase>();
         // We search all the checkpoints in the current scene
         CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList();
         try
@@ -90,7 +91,7 @@ public class CheckPoint : MonoBehaviour
         {
 
         }
-        allenemy = FindObjectsOfType<EnemyBase>();
+        
     }
     void Update()
     {
@@ -101,6 +102,7 @@ public class CheckPoint : MonoBehaviour
                 edc.isDead[i] = true;
             }
         }
+
         try
         {
             checkIfAllDead();
@@ -109,10 +111,12 @@ public class CheckPoint : MonoBehaviour
         {
 
         }
+
         if (CPAudio.isPlaying)
         {
             stopAllComboAudio();
         }
+
         //Debug.Log(allDead);
     }
     public void checkIfAllDead()
@@ -157,7 +161,7 @@ public class CheckPoint : MonoBehaviour
     {
         try
         {
-            foreach (EnemyBase enemy in allenemy)
+            foreach (EnemyBase enemy in enemies)
             {
                 if (enemy.KillAudio.isPlaying) enemy.KillAudio.Stop();
                 if (enemy.HSAudio.isPlaying) enemy.HSAudio.Stop();
