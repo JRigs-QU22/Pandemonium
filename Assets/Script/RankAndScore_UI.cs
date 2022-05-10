@@ -37,17 +37,17 @@ public class RankAndScore_UI : MonoBehaviour
             RankText.text = "Your Rank: C";
             TipText.enabled = true;
         }
-        if (CC.value > 10 && CC.value < 14)
+        if (CC.value > 10 && CC.value < 14 && PlayerScore >= 100 && PlayerScore <= 300)
         {
-            RankText.text = "Your Rank: B";
+            RankText.text = "Your Rank: B ";
             TipText.enabled = true;
         }
-        if (CC.value >= 14 && CC.value <= 18)
+        if (CC.value >= 14 && CC.value <= 18 && PlayerScore > 300 && PlayerScore < 500)
         {
             RankText.text = "Your Rank: A";
             TipText.enabled = true;
         }
-        if (CC.value > 18)
+        if (CC.value > 26 && PlayerScore >= 500)
         {
             RankText.text = "Your Rank: S";
             TipText.enabled = false;
