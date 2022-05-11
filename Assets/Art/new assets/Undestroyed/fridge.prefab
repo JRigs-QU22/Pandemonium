@@ -2765,6 +2765,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7498808764562536284}
   - component: {fileID: 5770646504022750389}
+  - component: {fileID: 1457382877603967528}
   m_Layer: 0
   m_Name: fridge
   m_TagString: Untagged
@@ -2835,6 +2836,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.007752, y: 7.56431, z: 3.8474271}
   m_Center: {x: 0.0866118, y: 1.5249815, z: -0.7107786}
+--- !u!114 &1457382877603967528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7159261588839837158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df547c014ee51e448092a4c7ea739c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Strength: 0
+  FracturedObject: {fileID: 2004393813661634513, guid: 51f2f98523cc28648a6c7f81252f7823, type: 3}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  TimeToDestroy: 15
+  DoSlowmotionWhenDestroy: 0
+  DoSlowmotionWhenPlayerIsJumping: 0
 --- !u!1 &7255918480586787453
 GameObject:
   m_ObjectHideFlags: 0
