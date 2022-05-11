@@ -22,22 +22,22 @@ public class RankAndScore_UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (CC.value < 1)
+        if (CC.value < 1 || PlayerScore < 50)
         {
             RankText.text = "Your Rank: F";
             TipText.enabled = true;
         }
-        if (CC.value >= 1  && CC.value < 6)
+        if (CC.value >= 1  && CC.value < 6 || PlayerScore >= 50 && PlayerScore <= 100)
         {
             RankText.text = "Your Rank: D";
             TipText.enabled = true;
         }
-        if (CC.value >= 6  && CC.value <= 10)
+        if (CC.value >= 6  && CC.value <= 10 || PlayerScore > 100 && PlayerScore < 200)
         {
             RankText.text = "Your Rank: C";
             TipText.enabled = true;
         }
-        if (CC.value > 10 && CC.value < 14 && PlayerScore >= 100 && PlayerScore <= 300)
+        if (CC.value > 10 && CC.value < 14 && PlayerScore >= 200 && PlayerScore <= 300)
         {
             RankText.text = "Your Rank: B ";
             TipText.enabled = true;

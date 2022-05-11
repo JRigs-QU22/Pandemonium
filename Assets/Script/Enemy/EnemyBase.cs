@@ -264,9 +264,9 @@ public class EnemyBase : MonoBehaviour
         {
             ScoreTime -= Time.deltaTime;
         }
-        else if (ScoreTime < 0)
+        else if (ScoreTime <= 0)
         {
-            score.value += 0;
+            scorePoint = 0;
         }
         if (ScoreTime > 0 && isHeadshot == true)
         {
@@ -309,7 +309,7 @@ public class EnemyBase : MonoBehaviour
         }
 
 
-
+        scorePoint = 0;
         rgd.State = RagdollEnemyAdvanced.RagdollState.Ragdolled;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
         Destroy(weaponModel, TimeToDelete);
